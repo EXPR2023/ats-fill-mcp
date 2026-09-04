@@ -1,0 +1,20 @@
+{
+  "name": "ats-fill-mcp",
+  "version": "0.1.0",
+  "description": "MCP server: 通用网申表 AI 自动填写（页内采集 + 批量执行引擎，语义规划由 Agent/LLM 完成）",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "smoke": "node smoke.mjs",
+    "check": "node --check src/index.js && node --check src/engine.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "playwright-core": "^1.49.0",
+    "zod": "^3.24.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
